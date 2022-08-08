@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="This is my website description">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Registration</title>
+
+        <style>
+            body{
+                background-image: url("images/nile.jpg");
+                background-repeat: no-repeat;
+            }
+            #name{
+                height: 20px;
+                width: 300px;
+                line-height: 1.9em;
+            }
+            #email{
+                height: 20px;
+                width: 300px;
+                line-height: 1.9em;
+            }
+            #age{
+                height: 20px;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body> 
+
+         <form action="dennis.php">
+
+            
+            <!--Name-->
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+
+             <!--Email-->
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" id="email" placeholder="Enter your Email">
+            </div>
+
+             <!--Message-->
+            <div>
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" cols="50" rows="5"></textarea>              
+                </div>
+
+            <div>
+                <label for="Select">Select</label>
+                <select name="Gender" id="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <!--Age-->
+            <div>
+                <label for="age">Age:</label><br>
+                <input type="number" name="age" id="age">
+            </div>
+
+             <!--Date of Birth-->
+            <div>
+                <label for="Date of Birth">Date of Birth:</label><br>
+                <input type="date" name="Date of Birth" id="Date of Birth">
+            </div> 
+
+             <!--Membership-->
+            <div>
+                <label for="membership">Membership</label>
+                <input type="radio" name="membership" value="simple" id="membership"> Undergraduate
+                <input type="radio" name="membership" value="standard" id="membership">Postgraduate
+                <input type="radio" name="membership" value="super" id="membership"> Masters
+                
+            </div>
+
+            
+             <!--Button-->
+            <button type="submit" style="height: 30px; width: 100px;">Submit</button>
+         </form>
+         
+        
+         
+    </body>
+</html> 
